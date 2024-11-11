@@ -44,3 +44,39 @@ Do you remember the Shell? It’s exactly the same but limited to a specific use
 [uuid module](https://docs.python.org/3.8/library/uuid.html)  [datetime](https://docs.python.org/3.8/library/datetime.html)  [unittest module](https://docs.python.org/3.8/library/unittest.html#module-unittest)
 [args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)  [Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)  [cmd module wiki page](https://wiki.python.org/moin/CmdModule)
 [python unittest](https://realpython.com/python-testing/)
+
+# Execution
+The shell(console) should work in an interactive and non-interactive mode.
+
+## __Interactive mode__:
+```
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+```
+
+## __Non-interactive mode__:
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+```
+
