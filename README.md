@@ -14,4 +14,4 @@ This abstraction will also allow you to change the type of storage easily withou
 
 The console will be a tool to validate this storage engine.
 
-![The console](![image](https://github.com/user-attachments/assets/8b1cca88-0e7a-4948-846a-2c352f0d8179)
+(![image](https://github.com/user-attachments/assets/8b1cca88-0e7a-4948-846a-2c352f0d8179)
