@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Unittests for console HBNB."""
-
+"""Unittests for console.py."""
 import os
 import sys
 import unittest
@@ -18,7 +17,7 @@ class TestHBNBCommand_prompting(unittest.TestCase):
         self.assertEqual("(hbnb) ", HBNBCommand.prompt)
 
     def test_empty_line(self):
-        with patch("sys.stdout", new=StringIO()) as f:
+        with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd(""))
             self.assertEqual("", output.getvalue().strip())
 
@@ -28,7 +27,7 @@ class TestHBNBCommand_help(unittest.TestCase):
 
     def test_help_quit(self):
         h = "Quit command to exit the program."
-        with patch("sys.stdout", new=StringIO()) as f:
+        with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("help quit"))
             self.assertEqual(h, output.getvalue().strip())
 
