@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Unittests for console.py."""
+"""Unittests for console.py"""
 import os
 import sys
 import unittest
