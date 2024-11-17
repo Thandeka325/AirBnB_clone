@@ -25,21 +25,6 @@ class FileStorage:
     __file_path = "file.json"
     __objects = {}
 
-    # Include all model classes in the dictionary
-    __models_available = {
-            "BaseModel": BaseModel,
-            "User": User,
-            "State": State,
-            "City": City,
-            "Amenity": Amenity,
-            "Place": Place,
-            "Review": Review
-    }
-
-    def __init__(self):
-        """Initialize the FileStorage."""
-        pass
-
     def all(self):
         """Returns the dictionary of all objects."""
         return FileStorage.__objects
@@ -62,9 +47,11 @@ class FileStorage:
             with open(FileStorage.__file_path, "r") as f:
                 obj_dict = json.load(f)
                 for key, value in obj_dict.items():
-                    cls_name = value["__class__"]
-                    if cls_name in self.__models_available:
-                        cls = self.__models_available[cls_name]
+                    cls_name = value.get("__class__")
+                    if cls_name and cls_name in globals():
+                        cls = globals()[cls_name]
                         FileStorage.__objects[key] = cls(**value)
         except FileNotFoundError:
             pass
+        except json.JSONDecodeError:
+            print("Error: JSON file is corrupted or invalid.")
