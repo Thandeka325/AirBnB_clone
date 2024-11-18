@@ -18,7 +18,7 @@ class TestBaseModel(unittest.TestCase):
         self.assertIsInstance(instance, BaseModel)
         self.assertIsInstance(instance.id, str)
         self.assertIsInstance(instance.created_at, datetime)
-        self.assertIsInstance(instance.updayed_at, datetime)
+        self.assertIsInstance(instance.updated_at, datetime)
 
     def test_unique_id(self):
         """Test if each instance has a unique id."""
