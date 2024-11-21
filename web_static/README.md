@@ -34,3 +34,5 @@ It is encouraged that you fix your HTML part before starting the styling. Indeed
 - [MDN](https://developer.mozilla.org/en-US/)
 - [center boxes](https://css-tricks.com/centering-css-complete-guide/)
 
+![image](https://github.com/user-attachments/assets/00f10b34-1fed-49dc-b1ff-ec098493f958)
+
