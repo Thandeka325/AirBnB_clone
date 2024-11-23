@@ -1,0 +1,22 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #ff5a5f;;
+	color: white;
+}
+
+header button {
+	background-color: white;
+	color: #ff5a5f;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+header button:focus {
+	outline: 2px solid #007BFF;
+}

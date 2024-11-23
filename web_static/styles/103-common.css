@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	color: #333;
+	line-height: 1.6;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+a {
+	color: #007BFF;
+	text-decoration: none;
+}
+
+a:focus, a:hover {
+	text-decoration: underline;
+}
+
+@media (prefers-contrast: more) {
+	body {
+		color: #000;
+		background-color: #fff;
+	}
+
+	a {
+		color: #0056b3;
+	}
+}
