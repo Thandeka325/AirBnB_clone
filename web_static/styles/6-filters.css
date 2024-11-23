@@ -8,7 +8,6 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 20px;
-	position: relative;
 }
 
 .filters > div {
@@ -44,6 +43,8 @@ button {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
+	align-self: center;
+	margin: 0;
 }
 
 button:hover {
