@@ -4,10 +4,11 @@
 @media only screen and (max-width: 600px) {
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
 }
-
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .filters {
     height: 70px;
@@ -62,9 +63,9 @@
     font-size: 14px;
     margin: auto 0 auto 30px;
   }
-  
-  .locations:focus,
-  .amenities:focus {
+/* Focus for ARIA accesibility */
+.locations:focus,
+.amenities:focus {
   background-color: antiquewhite;
 }
 
@@ -97,6 +98,8 @@ article:focus {
     margin: 5px auto 5px auto;
   }
 
+  /* drop down on hover */
+
   .locations:hover,
   .amenities:hover {
     cursor: pointer;
@@ -112,6 +115,8 @@ article:focus {
     cursor: pointer;
   }
 
+}
+/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
 }
