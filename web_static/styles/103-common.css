@@ -1,32 +1,59 @@
-body {
+*{
 	margin: 0;
-	font-family: Arial, sans-serif;
-	color: #333;
-	line-height: 1.6;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* For mobile */
+body {
+	font-size: 14px;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  width: 100%;
+  color: #484848;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+span {
+	color: #000000;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 2rem auto;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
+	z-index: 0;
 }
 
-a {
-	color: #007BFF;
-	text-decoration: none;
+.div_price_by_night {
+	z-index: 10;
+}
+* {
+	z-index: inherit;
 }
 
-a:focus, a:hover {
-	text-decoration: underline;
+@media only screen and (min-width: 600px) {
+
 }
 
-@media (prefers-contrast: more) {
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
 	body {
-		color: #000;
-		background-color: #fff;
-	}
-
-	a {
-		color: #0056b3;
+		max-width: 1920px;
+		margin: 0 auto;
 	}
 }

@@ -1,11 +1,14 @@
-body {
+body{
 	margin: 0;
-	font-family: Arial, sans-serif;
+	padding: 0;
+	color: #484848;
+	font-size: 14px;
+	font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
 
-}
-
-.container {
-	width: 80px;
-	margin: 0px auto;
-	padding: 20px 0;
+.container{
+    margin: auto;
+    max-width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }

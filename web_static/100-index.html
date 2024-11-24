@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>100-index</title>
+		 <meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AirBnB Clone</title>
 		<link rel="stylesheet" href="styles/4-common.css">
 		<link rel="stylesheet" href="styles/3-header.css">
 		<link rel="stylesheet" href="styles/3-footer.css">
 		<link rel="stylesheet" href="styles/6-filters.css">
 		<link rel="stylesheet" href="styles/100-places.css">
+		<link rel="icon" href="images/icon.png" type="image/png">
 	</head>
 	<body>
 		<header>
-			<div class="logo">
-				<h1>hbnb</h1>
-			</div>
-			<button>Search</button>
 		</header>
 
 		<div class="container">
@@ -22,15 +21,13 @@
 					<h3>States</h3>
 					<h4>California, Arizona...</h4>
 					<ul class="popover">
-						<li>
-							<h2>Arizona:</h2>
+						<li><h2>Arizona:</h2>
 							<ul>
 								<li>Page</li>
 								<li>Page2</li>
 							</ul>
 						</li>
-						<li>
-							<h2>California:</h2>
+						<li><h2>California:</h2>
 							<ul>
 								<li>San Francisco</li>
 								<li>Los Altos</li>
@@ -48,53 +45,135 @@
 						<li>Iron</li>
 					</ul>
 				</div>
+				<button type="button" name="button">Search</button>
 			</section>
-
 			<section class="places">
 				<h1>Places</h1>
 				<article>
-					<h2>Beautiful Apartment</h2>
-					<div class="price_by_night">$120</div>
-					<div class="information">
-						<div class="max_guest">4 Guests</div>
-						<div class="number_rooms">2 Bedrooms</div>
-						<div class="number_bathrooms">2 Bathrooms</div>
+					<div class="article_places_header">
+						<h2>Villa</h2>
+						<div class="price_by_night">$200</div>
 					</div>
-					<div class="user">Owner: <b>Abuseh Mavundla</b></div>
+					<div class="information">
+						<div class="max_guest">6 Guests</div>
+						<div class="number_rooms">3 Bedrooms</div>
+						<div class="number_bathrooms">4 bathrooms</div>
+					</div>
+					<div class="user">
+						<p><b>Owner:</b> Thandeka Mavundla</p>
+					</div>
 					<div class="description">
-						<p>Luxury 2 bedroom apartment, with breathtaking ocean, and mountain views.
-						This is a perfect home away from home.</p>
+						<p>This is a beach front Villa with easy access to the beach and comes with a private pool and jaccuzi. Beautiful views of the mountain and ocean-sunrise and sunset.</p>
 					</div>
 					<div class="amenities">
 						<h2>Amenities</h2>
 						<ul>
-							<li>Pet Friendly</li>
-							<li>TV</li>
-							<li>Wifi</li>
-							<li>Jacuzzi</li>
-							<li>Swimming Pool</li>
-							<li>Kitchen</li>
-							<li>Lounge</li>
+							<li>
+								<div class="places_amenities_pet_friendly"></div>
+								Pet friendly
+							</li>
+							<li>
+								<div class="places_amenities_tv"></div>
+								TV
+							</li>
+							<li>
+								<div class="places_amenities_wifi"></div>
+								Wifi
+							</li>
 						</ul>
 					</div>
 					<div class="reviews">
-						<h2>Reviews</h2>
+						<h2> 2 Reviews</h2>
 						<ul>
 							<li>
 								<h3>From Bob Dylan the 27th October 2024</h3>
-								<p>Great stay! The apartment was clean and cozy.</p>
+								<p>Great stay! The villa was clean and cozy.</p>
+							</li>
+							<li>
 								<h3>From Alice Cooper the 5th November 2024</h3>
 								<p>Perfect location, with beautiful views and excellent amenities.</p>
 							</li>
 						</ul>
 					</div>
-
 				</article>
+				<article>
+					<h2>A Suite</h2>
+					<div class="price_by_night">$120</div>
+					<div class="information">
+						<div class="max_guest">2 Guests</div>
+						<div class="number_rooms">1 Bedroom</div>
+						<div class="number_bathrooms">2 Bathrooms</div>
+					</div>
+					<div class="user">
+						<p><b>Owner:</b> Abuseh Mavundla</p>
+					</div>
+					<div class="description">
+						<p>Private Suite on the 20th floor, that is cosy. Beautiful romatic place for two people.</p>
+					</div>
+					<div class="amenities">
+						<h2>Amenities</h2>
+						<ul>
+							<li>
+								<div class="places_amenities_pet_friendly"></div>
+								Pet friendly
+							</li>
+							<ul>
+					</div>
+					<div class="reviews">
+						<h2>1 Review</h2>
+						<ul>
+							<li>
+								<h3>From Mthandeni Cele the 23th August 2024</h3>
+								<p>Beautiful suite. I would definitely recommend.</p>
+							</li>
+						</ul>
+					</div>
+					</article>
+					<article>
+						<h2>A Beautiful Apartment</h2>
+						<div class="price_by_night">$100</div>
+						<div class="information">
+							<div class="max_guest">4 Guests</div>
+							<div class="number_rooms">2 Bedrooms</div>
+							<div class="number_bathrooms">2 Bathrooms</div>
+						</div>
+						<div class="user">
+							<p><b>Owner:</b> Lihle Mavundla</p>
+						</div>
+						<div class="description">
+							<p>Beautiful 2 bedroom apartment with the views of the beach and mountain.</p>
+						</div>
+						<div class="amenities">
+							<h2>Amenities</h2>
+							<ul>
+								<li>
+									<div class="'places_amenities_pet_friendly"></div>
+									Pet friendly
+								</li>
+								<li>
+									<div class="places_amenities_tv"></div>
+									TV
+								</li>
+								<li>
+									<div class="places_amenities_wifi"></div>
+									Wifi
+								</li>
+							</ul>
+						</div>
+						<div class="revies">
+							<h2>1 Review</h2>
+							<ul>
+								<li>
+									<h3>From Mrs Hotchner the 1st October 2024</h3>
+									<p>The apartment was clean and close to all tourist attractions</p>
+								</li>
+							</ul>
+						</div>
+					</article>
 			</section>
 		</div>
-
 		<footer>
-			<p>Best School<p>
+			<p>Best School</p>
 		</footer>
 	</body>
 </html>

@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>8-index</title>
+		 <meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AirBnB Clone</title>
 		<link rel="stylesheet" href="styles/4-common.css">
 		<link rel="stylesheet" href="styles/3-header.css">
 		<link rel="stylesheet" href="styles/3-footer.css">
 		<link rel="stylesheet" href="styles/6-filters.css">
 		<link rel="stylesheet" href="styles/8-places.css">
+		<link rel="icon" href="images/icon.png" type="image/png">
 	</head>
 	<body>
 		<header>
 			<div class="logo">
-				<h1>hbnb</h1>
 			</div>
-			<button>Search</button>
 		</header>
 
 		<div class="container">
 			<section class="filters">
+				<button type="button">Search</button>
 				<div class="locations">
-					<h2>States</h2>
+					<h3>States</h3>
 					<h4>California, Arizona...</h4>
 					<ul class="popover">
 						<li>
-							<h3>Arizona:</h3>
-							<ul>
-								<li>Page</li>
-								<li>Page2</li>
-							</ul>
-						</li>
-						<li>
-							<h3>California:</h3>
-							<ul>
-								<li>San Francisco</li>
-								<li>Los Altos</li>
-							</ul>
-						</li>
+							<h2>Arizona:</h2>
+							</li>
+							<li>
+								<ul class=popover_list">
+									<li>Page</li>
+									<li>Page2</li>
+								</ul>
+							</li>
+							<li>
+							<h2>California:</h2>
+							</li>
+							<li>
+								<ul class="popover_list">
+									<li>San Francisco</li>
+									<li>Los Altos</li>
+								</ul>
+							</li>
 					</ul>
 				</div>
 				<div class="amenities">
-					<h2>Amenities</h2>
+					<h3>Amenities</h3>
 					<h4>Internet, Kitchen...</h4>
 					<ul class="popover">
 						<li>Internet</li>
@@ -49,36 +55,144 @@
 					</ul>
 				</div>
 			</section>
-
 			<section class="places">
-				<h2>Places</h2>
-				<article>
-					<h3>Villa</h3>
-					<div class="price_by_night">$150</div>
-					<div class="information">
-						<div class="max_guest">
-							<span class="icon guest"></span> 4 Guests
+				<div class="places_title">
+					<h1>Places</h1>
+				</div>
+				<div class="articles">
+					<article>
+						<div class="price_title">
+							<div class="article_title">
+								<h2>Villa</h2>
+							</div>
+							<div clas="price_by_night">
+								<div class="price">
+									$200
+								</div>
+							</div>
 						</div>
-						<div class="number_rooms">
-							<span class="icon bedroom"></span> 2 Bedrooms
+						<div class="information">
+							<div class="max_guest">
+								<div class="guest_icon">
+								</div>
+								<div class="guest_number">
+									<h2> 6 Guests</h2>
+								</div>
+							</div>
+							<div class="number_rooms">
+								<div class="room_icon">
+								</div>
+								<div class="rooms_number">
+									<h2>3 Bedrooms</h2>
+								</div>
+							</div>
+							<div class="number_bathrooms">
+								<div class="bathrooms_icon">
+								</div>
+								<div class="bathrooms_number">
+									<h2>4 bathrooms<h2>
+								</div>
+							</div>
 						</div>
-						<div class="number_bathrooms">
-							<span class="icon bathroom"></span> 2 Bathrooms
+						<div class="user">
+							<b>Owner:</b> Thandeka Mavundla
 						</div>
-					</div>
-					<div class="user">
-						Owner: <strong>Thandeka Mavundla</strong>
-					</div>
-					<div class="description">
-						Luxury beach front villa with direct beach access and and sparkling pool.
-						Access to an indoor and outdoor jacuzzi. Amazing sea and mountain views with great outdoor entertainment areas.
-					</div>
-				</article>
+						<div class="description">
+							This is a beach front Villa with easy access to
+							the beach and comes with a private pool and
+							jaccuzi. Beautiful views of the mountain and
+							ocean-sunrise and sunset.
+						</div>
+					</article>
+					<article>
+						<div class="price_title">
+							<div class="article_title">
+								<h2>A Suite</h2>
+							</div>
+							<div class="price_by_night">
+								<div class="price">
+									$120
+								</div>
+							</div>
+						</div>
+						<div class="information">
+							<div class="max_guest">
+								<div class="guest_icon">
+								</div>
+								<div class = "guest_number">
+									<h2>2 Guests</h2>
+								</div>
+							</div>
+							<div class="number_rooms">
+								<div class="rooms_icon">
+									<h2>1 Bedroom</h2>
+								</div>
+							</div>
+							<div class="number_bathrooms">
+								<div class="bathrooms_icon">
+								</div>
+								<div class="bathrooms_number">
+									<h2>2 Bathrooms</h2>
+								</div>
+							</div>
+						</div>
+						<div class="user">
+							<b>Owner:</b> Abuseh Mavundla
+						</div>
+						<div class="description">
+							Private Suite on the 20th floor, that is cosy.
+							Beautiful romatic place for two people.
+						</div>
+					</article>
+					<article>
+						<div class="price_title">
+							<div class="article_title">
+								<h2>A Beautiful Apartment</h2>
+							</div>
+							<div class="price_by_night">
+								<div class="price">
+									$100
+								</div>
+							</div>
+						</div>
+						<div class="information">
+							<div class="max_guest">
+								<div class="guest_icon">
+								</div>
+								<div class="guest_icon">
+								</div>
+								<div class="guest_number">
+									<h2>4 Guests</h2>
+								</div>
+							</div>
+							<div class="number_rooms">
+								<div class="rooms_icon">
+								</div>
+								<div class="rooms_number">
+									<h2>2 Bedrooms</h2>
+								</div>
+							</div>
+							<div class="number_bathrooms">
+								<div class="bathrooms_icon">
+								</div>
+								<div class="bathrooms_number">
+									<h2>2 Bathrooms</h2>
+								</div>
+							</div>
+						</div>
+						<div class="user">
+							<b>Owner:</b> Lihle Mavundla
+						</div>
+						<div class="description">
+							Beautiful 2 bedroom apartment with the views of
+							the beach and mountain.
+						</div>
+					</article>
+				</div>
 			</section>
 		</div>
-
 		<footer>
-			<p>Best School<p>
+			Best School
 		</footer>
 	</body>
 </html>

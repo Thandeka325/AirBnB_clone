@@ -1,106 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>103-index</title>
-    <link rel="stylesheet" href="styles/103-common.css">
-    <link rel="stylesheet" href="styles/103-header.css">
-    <link rel="stylesheet" href="styles/103-footer.css">
-    <link rel="stylesheet" href="styles/103-filters.css">
-    <link rel="stylesheet" href="styles/103-places.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <h1>hbnb</h1>
-        </div>
-        <button>Search</button>
-    </header>
-
-    <!-- Main content -->
-    <main class="container">
-        <!-- Filters Section -->
-        <section class="filters">
-            <h2>Filters</h2>
-            <div class="locations">
-                <h3>States</h3>
-                <h4>California, Arizona...</h4>
-                <ul class="popover">
-                    <li>
-                        <h4>Arizona:</h4>
-                        <ul>
-                            <li>Page</li>
-                            <li>Page2</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4>California:</h4>
-                        <ul>
-                            <li>San Francisco</li>
-                            <li>Los Altos</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="amenities">
-                <h3>Amenities</h3>
-                <h4>Internet, Kitchen...</h4>
-                <ul class="popover">
-                    <li>Internet</li>
-                    <li>TV</li>
-                    <li>Kitchen</li>
-                    <li>Iron</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Places Section -->
-        <section class="places">
-            <h2>Places</h2>
-            <div class="places-container">
-                <article>
-                    <h3>A Suite</h3>
-                    <div class="price_by_night">$200</div>
-                    <div class="information">
-                        <div class="max_guest">
-                            <img src="images/icon_group.png" alt="Guests icon"> 2 Guests
-                        </div>
-                        <div class="number_rooms">
-                            <img src="images/icon_bed.png" alt="Bedrooms icon"> 1 Bedroom
-                        </div>
-                        <div class="number_bathrooms">
-                            <img src="images/icon_bath.png" alt="Bathrooms icon"> 1 Bathroom
-                        </div>
-                    </div>
-                    <div class="user">Owner: <b>Lihle Mavundla</b></div>
-                    <div class="description">Luxury suite on the 20th floor. It is very cozy, and offers ample privacy.</div>
-                    <div class="amenities">
-                        <h4>Amenities</h4>
-                        <ul>
-                            <li><img src="images/icon_wifi.png" alt="WiFi icon"></li>
-                            <li><img src="images/icon_tv.png" alt="TV icon"></li>
-                            <li><img src="images/icon_pets.png" alt="Pet-friendly icon"></li>
-                        </ul>
-                    </div>
-                    <div class="reviews">
-                        <h4>Reviews</h4>
-                        <ul>
-                            <li>
-                                <h5>From Bob Dylan on 27th October 2024</h5>
-                                <p>Great stay! The apartment was clean and cozy.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>Best School</p>
-    </footer>
-</body>
+	<head>
+		 <meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AirBnB Clone</title>
+		<link rel="stylesheet" href="styles/103-common.css">
+		<link rel="stylesheet" href="styles/103-header.css">
+		<link rel="stylesheet" href="styles/103-footer.css">
+		<link rel="stylesheet" href="styles/103-filters.css">
+		<link rel="stylesheet" href="styles/103-places.css">
+		<link rel="icon" href="images/icon.png" type="image/png">
+	</head>
+	<body>
+		<header>
+			<div class="mobile_nav" role="navigation" aria-label="Navigate through site content">
+				<label for="main_check" class="main_nav_burguer" aria-label="Responsive popup menu">|||</label>
+				<input type="checkbox" id="main_check" name="main_check" class="main_nav_check" aria-hidden="true" tabindex=0>
+				<nav>
+					<ul class="nav_bar_level1">
+						<li>
+							<label for="second_check"><span>States</span></label>
+							<input type="checkbox" name="second_check" id="second_check" aria-hidden="true">
+							<ul>
+								<li><span>Arizona</span></li>
+								<li><span>California</span></li>
+							</ul>
+						</li>
+						<li>
+							<label for="third_check"><span>Amenities</span></label>
+							<input type="checkbox" name="second_check" id="third_check" aria-hidden="true">
+							<ul>
+								<li><span>Internet</span></li>
+								<li><span>Tv</span></li>
+								<li><span>Wifi</span></li>
+								<li><span>Kitchen</span></li>
+								<li><span>Iron</span></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="container">
+			<section class="filters">
+				<div class="locations">
+					<h3>States</h3>
+					<h4>California, Arizona...</h4>
+					<ul class="popover">
+						<li><h2>Arizona:</h2>
+							<ul>
+								<li>Page</li>
+								<li>Page2</li>
+							</ul>
+						</li>
+						<li><h2>California:</h2>
+							<ul>
+								<li>San Francisco</li>
+								<li>Los Altos</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="amenities">
+					<h3>Amenities</h3>
+					<h4>Internet, Kitchen...</h4>
+					<ul class="popover">
+						<li>Internet</li>
+						<li>TV</li>
+						<li>Kitchen</li>
+						<li>Iron</li>
+					</ul>
+				</div>
+				<button type="button" name="button">Search</button>
+			</section>
+			<section class="places">
+				<h1>Places</h1>
+				<article>
+					<div class="article_places_header">
+						<h2>Villa</h2>
+						<div class="price_by_night">$200</div>
+					</div>
+					<div class="information">
+						<div class="max_guest">
+							<img src="images/icon_group.png" alt="Guest icon">
+							6 Guests
+						</div>
+						<div class="number_rooms">
+							<img src="images/icon_bed.png" alt="Bedroom icon">
+							3 Bedrooms
+						</div>
+						<div class="number_bathrooms">
+							<img src="images/icon_bath.png" alt="Bathroom icon">
+							4 bathrooms
+						</div>
+					</div>
+					<div class="user">
+						<p><b>Owner:</b> Thandeka Mavundla</p>
+					</div>
+					<div class="description">
+						<p>This is a beach front Villa with easy access to the beach and comes with a private pool and jaccuzi. Beautiful views of the mountain and ocean-sunrise and sunset.</p>
+					</div>
+					<div class="amenities">
+						<h2>Amenities</h2>
+						<ul>
+							<li><img src="images/icon_wifi.png" alt="Wifi icon"></li>
+							<li><img src="images/icon_tv.png" alt="TV icon"></li>
+							<li><img src="images/icon_pets.png" alt="Pet-friendly icon">
+						</ul>
+					</div>
+					<div class="reviews">
+						<h2> 2 Reviews</h2>
+						<ul>
+							<li>
+								<h3>From Bob Dylan the 27th October 2024</h3>
+								<p>Great stay! The villa was clean and cozy.</p>
+							</li>
+							<li>
+								<h3>From Alice Cooper the 5th November 2024</h3>
+								<p>Perfect location, with beautiful views and excellent amenities.</p>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<h2>A Suite</h2>
+					<div class="price_by_night">$120</div>
+					<div class="information">
+						<div class="max_guest">
+							<img src="images/icon_group.png" alt="Guest icon">
+							2 Guests
+						</div>
+						<div class="number_rooms">
+							<img src="images/icon_bed.png" alt="Bedroom icon">
+							1 Bedroom
+						</div>
+						<div class="number_bathrooms">
+							<img src="images/icon_bath.png" alt="Bathrooom icon">
+							2 Bathrooms
+						</div>
+					</div>
+					<div class="user">
+						<p><b>Owner:</b> Abuseh Mavundla</p>
+					</div>
+					<div class="description">
+						<p>Private Suite on the 20th floor, that is cosy. Beautiful romatic place for two people.</p>
+					</div>
+					<div class="amenities">
+						<h2>Amenities</h2>
+						<ul>
+							<li><img src="images/icon_wifi.png" alt="Wifi icon"></li>
+							<li><img src="images/icon_tv.png" alt="TV icon"></li>
+							<li>Jacuzzi</li>
+							<li>Infinity Pool</li>
+							<ul>
+					</div>
+					<div class="reviews">
+						<h2>1 Review</h2>
+						<ul>
+							<li>
+								<h3>From Mthandeni Cele the 23th August 2024</h3>
+								<p>Beautiful suite. I would definitely recommend.</p>
+							</li>
+						</ul>
+					</div>
+					</article>
+					<article>
+						<h2>A Beautiful Apartment</h2>
+						<div class="price_by_night">$100</div>
+						<div class="information">
+							<div class="max_guest">
+								<img src="images/icon_group.png" alt="Guest icon">
+								4 Guests
+							</div>
+							<div class="number_rooms">
+								<img src="images/icon_bed.png" alt="Bedroom icon">
+								2 Bedrooms
+							</div>
+							<div class="number_bathrooms">
+								<img src="images/icon_bath.png" alt="Bathroom icon">
+								2 Bathrooms
+							</div>
+						</div>
+						<div class="user">
+							<p><b>Owner:</b> Lihle Mavundla</p>
+						</div>
+						<div class="description">
+							<p>Beautiful 2 bedroom apartment with the views of the beach and mountain.</p>
+						</div>
+						<div class="amenities">
+							<h2>Amenities</h2>
+							<ul>
+								<li><img src="images/icon_pets.png" alt="Pet-friendly"></li>
+								<li><img src="images/icon_tv.png" alt="TV icon"></li>
+							</ul>
+						</div>
+						<div class="revies">
+							<h2>1 Review</h2>
+							<ul>
+								<li>
+									<h3>From Mrs Hotchner the 1st October 2024</h3>
+									<p>The apartment was clean and close to all tourist attractions</p>
+								</li>
+							</ul>
+						</div>
+					</article>
+			</section>
+		</div>
+		<footer aria-label="Footer brand information">
+			<p>Best School</p>
+		</footer>
+	</body>
 </html>

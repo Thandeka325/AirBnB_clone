@@ -1,17 +1,15 @@
 header {
-	background: #FF5A5F;
-	color: white;
-	padding: 10px 0;
-	text-align: center;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
 }
 
-header .logo h1 {
-	margin: 0;
-	font-size: 32px;
-	font-family: 'Arial Black', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	
+header .logo {
+    width: 142px;
+    height: 60px;
+    background: url("../images/logo.png") no-repeat center;
+    padding-left: 20px;
 }
